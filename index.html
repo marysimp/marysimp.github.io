@@ -14,6 +14,21 @@
 			Typekit.load();
 		} catch (e) {}
 	</script>
+	<script>
+		$(document).ready(function() {
+			$('li img').on('click', function() {
+				var src = $(this).attr('src');
+				var img = '<img src="' + src + '" class="img-responsive"/>';
+				$('#myModal').modal();
+				$('#myModal').on('shown.bs.modal', function() {
+					$('#myModal .modal-body').html(img);
+				});
+				$('#myModal').on('hidden.bs.modal', function() {
+					$('#myModal .modal-body').html('');
+				});
+			});
+		})
+	</script>
 
 	<link rel="stylesheet" href="style.css">
 </head>
@@ -30,6 +45,7 @@
 				<li><a href="http://thesearchforcookiemountain.wordpress.com">Blog</a></li>
 				<li><a href="resume.html">Resume</a> </li>
 		</nav>
+
 		<div class="row">
 			<div class="col-sm-4">
 				<img src="photos/geneticthumbnail2.png" alt="project1genes">
@@ -42,27 +58,39 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-4">
+			<div class="col-sm-4">
 				<img src="photos/baseballtitle2.png" alt="LPBbaseballintro">
 			</div>
-			<div class="col-xs-4">
+			<div class="col-sm-4">
 				<img src="photos/librarythumbnail.png" alt="libraryendcapsignage">
 			</div>
-			<div class="col-xs-4">
+			<div class="col-sm-4">
 				<img src="photos/plasticbeach.png" alt="plasticbeachcover">
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-sm-4">
 				<img src="photos/vitaminwaterthumbnail.png" alt="vitaminwater">
 			</div>
-			<div class="col-md-4">
+			<div class="col-sm-4">
 				<img src="photos/daybornresourcesthumbnail.png" alt="daybornresourcespage">
 			</div>
-			<div class="col-md-4">
+			<div class="col-sm-4">
 				<img src="photos/abenasgiftsthumbnail2.png" alt="abenasgifts">
 			</div>
 		</div>
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body">
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
+
 		<div style="display:none">
 			<div class="intro">
 				<p>
