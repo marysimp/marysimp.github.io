@@ -13,9 +13,7 @@ nav ul>li {
 }
 
 .intro{
-    max-width: 500px;
     margin: 0 100px 0 100px;
-<--    comment: figure out auto adjustment margin (flexbox stuff); -->
 }
 
 .intro img {
