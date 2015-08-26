@@ -2,32 +2,39 @@ ul {
 	width: 570px;
 	padding: 15px;
 	margin: 0px auto 0px auto;
-	border-top: 2px solid #000;
-	border-bottom: 1px solid #000;
 	text-align: center;
 }
 
 nav ul>li {
 	display: inline;
 	margin: 0px 3px;
+	padding: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-color: #A5029E;
 }
 
 .intro{
+    max-width: 500px;
     margin: 0 100px 0 100px;
 }
 
 .intro img {
     display: block; margin: 0 10px 10px 0;
     float: right;
+		width: 25%;
+		height: 25%;
 }
 
 .intro h3 {
     display: inline;
-    font-family: 'Brandon Grotesque', 'Gotham Ultra', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+		font-size: 42px;
 }
 
-.main {
-
+.footer {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #diamond {
