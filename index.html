@@ -15,6 +15,7 @@
 			Typekit.load();
 		} catch (e) {}
 	</script>
+
 	<script>
 		$(function() {
 			$('.popclicker').click(function() {
@@ -25,6 +26,15 @@
 			})
 		})
 	</script>
+
+<!-- I have no idea if I'm putting the right classes in the right places, so I was playing with it here :P -->
+<script>
+if ( addOrRemove ) {
+  $( ".popdown" ).addClass( 'active' );
+} else {
+  $( ".popclicker" ).removeClass( 'active' );
+}
+</script>
 
 	<link rel="stylesheet" href="style.css">
 </head>
