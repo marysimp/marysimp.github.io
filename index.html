@@ -16,18 +16,19 @@
 		} catch (e) {}
 	</script>
 
-	<script>
+<script>
 		$(function() {
 			$('.popclicker').click(function() {
 				$('.popdown').removeClass('active');
 
 				var popdownclass = $(this).attr('popdown-class');
-				$('.popdown.' + popdownclass).addClass('active');
+				$('.popdown').not('.' + popdownclass).removeClass('active');
+				$('.popdown.' + popdownclass).toggleClass('active');
 			})
 		})
 	</script>
 
-<!-- I have no idea if I'm putting the right classes in the right places, so I was playing with it here :P -->
+	<!--
 <script>
 if ( addOrRemove ) {
   $( ".popdown" ).addClass( 'active' );
@@ -35,6 +36,8 @@ if ( addOrRemove ) {
   $( ".popclicker" ).removeClass( 'active' );
 }
 </script>
+//-->
+
 
 	<link rel="stylesheet" href="style.css">
 </head>
@@ -87,10 +90,10 @@ if ( addOrRemove ) {
 				<img class="center" src="photos/baseballtitle2.png" alt="louisianabaseballstories">
 			</div>
 			<div class="col-sm-4 popclicker" popdown-class="plasticbeach">
-					<img class="center" src="photos/plasticbeachthumbnail.png" alt="plasticbeach">
+				<img class="center" src="photos/plasticbeachthumbnail.png" alt="plasticbeach">
 			</div>
 			<div class="col-sm-4 popclicker" popdown-class="dayborn">
-					<img class="center" src="photos/daybornresourcesthumbnail.png" alt="dayborn">
+				<img class="center" src="photos/daybornresourcesthumbnail.png" alt="dayborn">
 			</div>
 		</div>
 		<div class="popdown baseball">
@@ -105,13 +108,13 @@ if ( addOrRemove ) {
 		</div>
 		<div class="row">
 			<div class="col-sm-4 popclicker" popdown-class="jimi">
-					<img class="center" src="photos/jimithumbnail2.png" alt="jimithumbnail">
+				<img class="center" src="photos/jimithumbnail2.png" alt="jimithumbnail">
 			</div>
 			<div class="col-sm-4 popclicker" popdown-class="abenas">
-					<img class="center" src="photos/abenasgiftsthumbnail2.png" alt="abenasgifts">
+				<img class="center" src="photos/abenasgiftsthumbnail2.png" alt="abenasgifts">
 			</div>
 			<div class="col-sm-4 popclicker" popdown-class="genetic">
-					<img class="center" src="photos/geneticthumbnail2.png" alt="geneticthumbnail">
+				<img class="center" src="photos/geneticthumbnail2.png" alt="geneticthumbnail">
 			</div>
 			<div class="popdown jimi">
 				<img class="center" src="photos/jimihendrixfull1.png">
