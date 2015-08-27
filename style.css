@@ -49,6 +49,14 @@ img.center {
 	display: block;
 }
 
+.popdown {
+	display: none;
+}
+
+.popdown.active {
+	display: block;
+}
+
 .col-sm-4 {
 	padding: 15px;
 }

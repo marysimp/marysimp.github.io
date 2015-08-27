@@ -15,6 +15,16 @@
 			Typekit.load();
 		} catch (e) {}
 	</script>
+	<script>
+		$(function() {
+			$('.popclicker').click(function() {
+				$('.popdown').removeClass('active');
+
+				var popdownclass = $(this).attr('popdown-class');
+				$('.popdown.' + popdownclass).addClass('active');
+			})
+		})
+	</script>
 
 	<link rel="stylesheet" href="style.css">
 </head>
@@ -40,64 +50,67 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-4">
-				<a href="vitwater.html">
-					<img class="center" src="photos/vitaminwaterthumbnail.png" alt="vitaminwater">
-				</a>
+			<div class="col-sm-4 popclicker" popdown-class="vitwater">
+				<img class="center" src="photos/vitaminwaterthumbnail.png" alt="vitaminwater">
 			</div>
-			<div class="col-sm-4">
-				<a href="labyrinth.html">
-					<img class="center" src="photos/labyrinththumbnail-01.png" alt="labyrinthlogo">
-				</a>
+			<div class="col-sm-4 popclicker" popdown-class="labyrinth">
+				<img class="center" src="photos/labyrinththumbnail-01.png" alt="labyrinthlogo">
 			</div>
-			<div class="col-sm-4">
-				<a href="library.html">
-					<img class="center" src="photos/librarythumbnail.png" alt="EBRPLproject">
-				</a>
+			<div class="col-sm-4 popclicker" popdown-class="ebrpl">
+				<img class="center" src="photos/librarythumbnail.png" alt="EBRPLproject">
 			</div>
 		</div>
-		<div class="row" display="hidden">
+		<div class="popdown vitwater">
 			<img class="center" src="photos/vitaminwaterlabelfull.png">
 		</div>
-		<div class="row" display="hidden">
+		<div class="popdown labyrinth">
 			<img class="" src="photos/labyrinthlogofinal.png">
 			<img class="" height="25%" width="25%" src="photos/labyrinthstationaryfull.png">
 		</div>
-		<div class="row" display="hidden">
-			<img class="center" src="photos/EBRPLportal.jpg"> <img class="center" src="photos/librarystationaryfull.png"> <img class="center" src="photos/libraryadsfull.png">
+		<div class="popdown ebrpl">
+			<img class="center" height="60%" width="60%" src="photos/EBRPLportal.jpg">
+			<img class="center" height="60%" width="60%" src="photos/librarystationaryfull.png">
+			<img class="center" height="60%" width="60%" src="photos/libraryadsfull.png">
 		</div>
 		<div class="row">
-			<div class="col-sm-4">
-				<a href="">
-					<img class="center" src="photos/baseballtitle2.png" alt="louisianabaseballstories">
-				</a>
+			<div class="col-sm-4 popclicker" popdown-class="baseball">
+				<img class="center" src="photos/baseballtitle2.png" alt="louisianabaseballstories">
 			</div>
-			<div class="col-sm-4">
-				<a href="">
+			<div class="col-sm-4 popclicker" popdown-class="plasticbeach">
 					<img class="center" src="photos/plasticbeachthumbnail.png" alt="plasticbeach">
-				</a>
 			</div>
-			<div class="col-sm-4">
-				<a href="">
+			<div class="col-sm-4 popclicker" popdown-class="dayborn">
 					<img class="center" src="photos/daybornresourcesthumbnail.png" alt="dayborn">
-				</a>
 			</div>
 		</div>
+		<div class="popdown baseball">
+			<img class="" src="photos/baseballtitlefull.jpg">
+			<img class="" src="photos/nativewatersfull.jpg">
+		</div>
+		<div class="popdown plasticbeach">
+			<img class="center" src="photos/plasticbeachfull.png">
+		</div>
+		<div class="popdown dayborn">
+			<img class="center" height="75%" width="75%" src="photos/daybornfourth.jpg">
+		</div>
 		<div class="row">
-			<div class="col-sm-4">
-				<a href="hendrix.html">
+			<div class="col-sm-4 popclicker" popdown-class="jimi">
 					<img class="center" src="photos/jimithumbnail2.png" alt="jimithumbnail">
-				</a>
 			</div>
-			<div class="col-sm-4">
-				<a href="">
+			<div class="col-sm-4 popclicker" popdown-class="abenas">
 					<img class="center" src="photos/abenasgiftsthumbnail2.png" alt="abenasgifts">
-				</a>
 			</div>
-			<div class="col-sm-4">
-				<a href="">
+			<div class="col-sm-4 popclicker" popdown-class="genetic">
 					<img class="center" src="photos/geneticthumbnail2.png" alt="geneticthumbnail">
-				</a>
+			</div>
+			<div class="popdown jimi">
+				<img class="center" src="photos/jimihendrixfull1.png">
+			</div>
+			<div class="popdown abenas">
+				<img class="center" src="photos/abenasgifts.png">
+			</div>
+			<div class="popdown genetic">
+				<img class="center" height="75%" width="75%" src="photos/geneticmanipulationfull.jpg">
 			</div>
 		</div>
 		<div>
