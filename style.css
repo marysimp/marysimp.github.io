@@ -73,6 +73,10 @@ p {
 	padding-top: 20px;
 }
 
+.maincontent {
+	margin-left: 200px;
+}
+
 #diamond {
     width: 120px;
     height: 120px;
