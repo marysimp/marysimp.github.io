@@ -1,13 +1,14 @@
 a:link {
-
+ color: #579300;
 }
 
 a:visited {
-
+ color: #830FA8;
 }
 
-a:active {
-
+a:hover {
+	background-color: #90EA0D;
+	text-decoration: none;
 }
 
 ul {
@@ -23,7 +24,7 @@ nav ul>li {
 	padding: 20px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
-	font-color: #A5029E;
+	font-weight: bolder;
 }
 
 .intro{
@@ -45,6 +46,11 @@ nav ul>li {
 }
 
 img.center {
+	margin: auto;
+	display: block;
+}
+
+p.center {
 	margin: auto;
 	display: block;
 }

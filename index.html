@@ -3,7 +3,7 @@
 <html>
 
 <head>
-	<title>About Me</title>
+	<title>Mary Simpson's Portfolio</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
@@ -16,27 +16,18 @@
 		} catch (e) {}
 	</script>
 
-<script>
+	<script>
 		$(function() {
+			//popclicker on click function
 			$('.popclicker').click(function() {
-				$('.popdown').removeClass('active');
-
 				var popdownclass = $(this).attr('popdown-class');
-				$('.popdown').not('.' + popdownclass).removeClass('active');
-				$('.popdown.' + popdownclass).toggleClass('active');
-			})
+				$('.popdown').not('.' + popdownclass).slideUp();
+				$('.popdown.' + popdownclass).slideToggle();
+			});
+
+			//put more code after this comment
 		})
 	</script>
-
-	<!--
-<script>
-if ( addOrRemove ) {
-  $( ".popdown" ).addClass( 'active' );
-} else {
-  $( ".popclicker" ).removeClass( 'active' );
-}
-</script>
-//-->
 
 
 	<link rel="stylesheet" href="style.css">
@@ -54,11 +45,11 @@ if ( addOrRemove ) {
 				<li><a href="http://thesearchforcookiemountain.wordpress.com">BLOG</a></li>
 				<li><a href="resume.html">RESUME</a> </li>
 		</nav>
-		<div class="row" style="display:none">
-			<div class="col-sm-12">
+		<div class="row">
+			<div class="col-sm-8 " style="display:none">
 				<h3>Hi! I'm Mary Simpson.</h3>
 				<p>
-					<img src="photos/railroadprofile.jpg" alt="profilepic"> I'm a designer, illustrator, and aspiring developer located in Seattle, WA. I love great design, backpacking, and train travel. Please peruse selections from my portfolio below and
+					<img src="photos/railroadprofile.jpg" alt="profilepic" height="20%" width="20%"> I'm a designer, illustrator, and aspiring developer located in Seattle, WA. I love great design, backpacking, and train travel. Please peruse selections from my portfolio below and
 					<strong><a href="mailto:msimps6@uw.edu">contact me</a></strong> if you like what you see!</p>
 			</div>
 		</div>
@@ -75,15 +66,20 @@ if ( addOrRemove ) {
 		</div>
 		<div class="popdown vitwater">
 			<img class="center" src="photos/vitaminwaterlabelfull.png">
+			<p class="center">Conceptual branding redesign of the Vitamin Water brand for American settlers in the 1800s. Based on imagery from Dr. Bronner's, as well as research into popular brands from the 1800s. </p>
 		</div>
 		<div class="popdown labyrinth">
 			<img class="" src="photos/labyrinthlogofinal.png">
 			<img class="" height="25%" width="25%" src="photos/labyrinthstationaryfull.png">
+			<p class="center">Development of a complete identity for the toy company Labyrinth, based on their best-selling product. </p>
 		</div>
 		<div class="popdown ebrpl">
-			<img class="center" height="60%" width="60%" src="photos/EBRPLportal.jpg">
+			<a href="http://ebrpl.com">
+				<img class="center" height="60%" width="60%" src="photos/EBRPLportal.jpg">
+			</a>
 			<img class="center" height="60%" width="60%" src="photos/librarystationaryfull.png">
 			<img class="center" height="60%" width="60%" src="photos/libraryadsfull.png">
+			<p class="center">Total rebranding campaign for the East Baton Rouge Parish Library, which included a brand new blog design, a marketing campaign aimed at Millennials, and a new identity system.</p>
 		</div>
 		<div class="row">
 			<div class="col-sm-4 popclicker" popdown-class="baseball">
@@ -99,12 +95,15 @@ if ( addOrRemove ) {
 		<div class="popdown baseball">
 			<img class="" src="photos/baseballtitlefull.jpg">
 			<img class="" src="photos/nativewatersfull.jpg">
+			<p class="center">Part of two promotional campaigns for Louisiana Public Broadcasting, an affiliate of PBS. I created two tv ads to promote Louisiana Baseball Stories, as well as the award-winning documentary, Native Waters: A Chitimacha Recollection.</p>
 		</div>
 		<div class="popdown plasticbeach">
 			<img class="center" src="photos/plasticbeachfull.png">
+			<p class="center">A conceptual redesign of the album Plastic Beach by the Gorillaz. I painted the background with acrylics in the style of artist '', then digitally created a vector image of the painting and overlaid it with carefully selected typography.</p>
 		</div>
 		<div class="popdown dayborn">
 			<img class="center" height="75%" width="75%" src="photos/daybornfourth.jpg">
+			<p class="center">A website I created about various events that happened on the day I was born in 1989.</p>
 		</div>
 		<div class="row">
 			<div class="col-sm-4 popclicker" popdown-class="jimi">
@@ -118,12 +117,15 @@ if ( addOrRemove ) {
 			</div>
 			<div class="popdown jimi">
 				<img class="center" src="photos/jimihendrixfull1.png">
+				<p class="center">A poster illustration for a hypothetical Jimi Hendrix reunion concert occuring on December 21, 2012. Inspired by psychedelic posters from the 1960s as well as the Mayan ruins at Tikal.</p>
 			</div>
 			<div class="popdown abenas">
 				<img class="center" src="photos/abenasgifts.png">
+				<p class="center">Business card and logo created for a Baton Rouge business, Abena's Gifts. The client gave me color palettes to work from based on products, Ghanaian exported goods.</p>
 			</div>
 			<div class="popdown genetic">
 				<img class="center" height="75%" width="75%" src="photos/geneticmanipulationfull.jpg">
+				<p class="center">A poster I digitally painted in Photoshop illustrating the death of the honeybees from genetically modified crops.</p>
 			</div>
 		</div>
 		<div>
