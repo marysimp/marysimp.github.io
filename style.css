@@ -56,6 +56,15 @@ p {
 	margin-top: 20px;
 }
 
+p.resume {
+	margin-top: -5px;
+}
+
+.maincontent ul>li {
+	list-style-type: none;
+	text-align: left;
+	margin-left: -200px;
+}
 .popdown {
 	display: none;
 }
@@ -74,7 +83,7 @@ p {
 }
 
 .maincontent {
-	margin-left: 200px;
+	margin-left: 250px;
 }
 
 #diamond {
