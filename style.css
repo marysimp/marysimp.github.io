@@ -53,6 +53,7 @@ img.center {
 p {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
+	margin-top: 20px;
 }
 
 .popdown {
@@ -64,6 +65,10 @@ p {
 }
 
 .col-sm-4 {
+	padding: 15px;
+}
+
+.col-sm-2 {
 	padding: 15px;
 }
 
